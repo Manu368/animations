@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.bg-container01 {
+    background-image: url("https://res.cloudinary.com/dqrttxm5s/image/upload/v1674729439/01_sky_ecuqmb.jpg");
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    position:relative;
+    z-index:1;
+}
+.image02 {
+    width:10000%;
+    height: 250px;
+    background-image: url("https://res.cloudinary.com/dqrttxm5s/image/upload/v1674729877/road02_ygl87l.jpg");
+    bottom:0;
+    z-index:1;
+    position: absolute;
+    background-repeat: repeat-x;
+    animation: manu01 6s linear infinite;
+    
+}
+
+@keyframes manu01 {
+    100% {
+        transform: translateX(-3400px);
+        
+        
+    }
+}
+.image03 {
+    width: 5000%;
+    height:250px;
+    position: absolute;
+    background-repeat: repeat-x;
+    bottom: 250px;
+    z-index:1;
+    background-image: url("https://res.cloudinary.com/dqrttxm5s/image/upload/v1674730725/city_hqjz2b.png");
+    animation: manu02 10s linear infinite;
+   
+}
+
+@keyframes manu02 {
+    100% {
+        transform: translateX(-1400px);   
+    }
+}
+
+.image04 {
+    width: 400px;
+    left: 50%;
+    bottom: 150px;
+    transform:translateX(-50%);
+    position: absolute;
+    z-index:2;
+    
+}
+
+.mano {
+    width:100%;   
+}
+.wheel {
+    width: 400px;
+    left: 50%;
+    bottom: 180px;
+    transform:translateX(-50%);
+    position: absolute;
+    z-index:2;
+    
+}
+
+.wheel img {
+    width:75px;
+    height:75px;
+}
+.back {
+    left: 34px;
+    position: absolute;
+    top: -50px;
+    animation: manu05 0.5s linear infinite;
+}
+.front {
+    left:278px;
+    position: absolute;
+    top: -50px;
+    animation: manu05 0.5s linear infinite;
+}
+
+
+@keyframes manu05 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
